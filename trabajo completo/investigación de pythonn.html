@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Comparación: Python vs Java</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #00426e;
+      margin: 0;
+      padding: 40px 10vw;
+      color: #000000;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #FFD43B;
+    }
+    h2 {
+      color: #FFD43B;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 8px;
+      margin-top: 40px;
+    }
+    .comparacion {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .caja {
+      background-color: #ffffff;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+      border-radius: 8px;
+      flex: 1 1 350px;
+      padding: 25px;
+      min-width: 300px;
+      max-width: 450px;
+    }
+    .caja h3 {
+      color: #2980b9;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      background: url('https://cdn-icons-png.flaticon.com/512/190/190411.png') no-repeat left center;
+      background-size: 18px;
+      padding-left: 30px;
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+    pre {
+      background-color: #079ee4;
+      color: #f8f8f2;
+      padding: 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16px;
+      white-space: pre-wrap;
+      margin-top: 15px;
+    }
+    .python {
+      border-top: 5px solid #4B8BBE; /* azul python */
+    }
+    .java {
+      border-top: 5px solid #f89820; /* naranja java */
+    }
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      color: #777;
+      font-size: 14px;
+      border-top: 1px solid #ddd;
+      padding-top: 15px;
+    }
+    @media(max-width: 700px) {
+      .comparacion {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Comparación: Python vs Java</h1>
+  <p style="text-align:center; font-size:1.2rem; max-width: 700px; margin: auto;">
+    Dos gigantes de la programación que dominan el mundo tecnológico. Aquí te mostramos sus diferencias clave, ventajas y usos más comunes.
+  </p>
+
+  <div class="comparacion">
+
+    <div class="caja python">
+      <h3>🐍 Python</h3>
+      <ul>
+        <li>Lenguaje interpretado, fácil y rápido de aprender.</li>
+        <li>Sintaxis sencilla y legible, ideal para principiantes.</li>
+        <li>Muy usado en ciencia de datos, inteligencia artificial y automatización.</li>
+        <li>Gran comunidad y muchas librerías para casi todo.</li>
+        <li>Multi-paradigma: soporta programación orientada a objetos y funcional.</li>
+        <li>No necesita compilación, corre directamente.</li>
+        <li>Ideal para prototipos rápidos y scripts.</li>
+      </ul>
+      <h4>Ejemplo: Hola Mundo en Python</h4>
+      <pre>
+print("¡Hola, mundo!")
+      </pre>
+    </div>
+
+    <div class="caja java">
+      <h3>☕ Java</h3>
+      <ul>
+        <li>Lenguaje compilado y ejecutado en máquina virtual (JVM).</li>
+        <li>Más estricto en sintaxis, recomendado para grandes proyectos.</li>
+        <li>Muy usado en desarrollo de aplicaciones empresariales y Android.</li>
+        <li>Alta portabilidad: "Write Once, Run Anywhere".</li>
+        <li>Fuerte tipado estático y orientación a objetos pura.</li>
+        <li>Requiere compilación antes de ejecutar.</li>
+        <li>Gran rendimiento y robustez para aplicaciones críticas.</li>
+      </ul>
+      <h4>Ejemplo: Hola Mundo en Java</h4>
+      <pre>
+public class HolaMundo {
+    public static void main(String[] args) {
+        System.out.println("¡Hola, mundo!");
+    }
+}
+      </pre>
+    </div>
+
+  </div>
+
+  <h2>¿Cuál elegir?</h2>
+  <p style="max-width: 700px; margin: auto; font-size: 1.1rem;">
+    Si buscás algo fácil y rápido para aprender, automatizar o meterte en ciencia de datos, <strong>Python</strong> es tu amigo.  
+    Si querés construir sistemas grandes, apps Android o software empresarial, <strong>Java</strong> es una apuesta segura.  
+    Ambos son muy demandados y con futuro asegurado, así que elegí según tu objetivo.
+  </p>
+
+  <footer>
+    Página creada por Jorge-marisol-stiven-melvin · lic Sarai en  profesora encargada del proyecto
+  </footer>
+
+</body>
+</html>
