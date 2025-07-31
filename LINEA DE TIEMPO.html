@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Línea de Tiempo de Python</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #034058;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 40px 10px 10px;
+      color: #fcd915;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #2980b9;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      padding: 20px 30px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+    }
+
+    .timeline-item.left {
+      left: 0;
+    }
+
+    .timeline-item.right {
+      left: 50%;
+    }
+
+    .timeline-item::before {
+      content: " ";
+      position: absolute;
+      top: 15px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #2980b9;
+      border: 3px solid white;
+      z-index: 1;
+    }
+
+    .timeline-item.left::before {
+      right: -10px;
+    }
+
+    .timeline-item.right::before {
+      left: -10px;
+    }
+
+    .timeline-content {
+      padding: 20px;
+      background-color: white;
+      position: relative;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeline-content h3 {
+      margin-top: 0;
+      color: #2980b9;
+    }
+
+    .timeline-content p {
+      margin: 10px 0 0;
+      color: #555;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .timeline::after {
+        left: 10px;
+      }
+
+      .timeline-item {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 15px;
+      }
+
+      .timeline-item.right {
+        left: 0%;
+      }
+
+      .timeline-item.left::before,
+      .timeline-item.right::before {
+        left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📘 Línea de Tiempo de Python</h1>
+
+  <div class="timeline">
+
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <h3>1989</h3>
+        <p>Guido van Rossum empieza a trabajar en Python como proyecto personal durante las vacaciones.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <h3>1991</h3>
+        <p>Lanzamiento de Python 0.9.0. ¡Nace oficialmente el lenguaje!</p>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <h3>2000</h3>
+        <p>Llega Python 2.0 con recolección de basura, soporte de Unicode y más.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <h3>2008</h3>
+        <p>Se lanza Python 3.0 con una sintaxis moderna (pero no compatible con Python 2).</p>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <h3>2020</h3>
+        <p>Fin del soporte oficial para Python 2. Se termina una era.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <h3>Hoy</h3>
+        <p>Python domina en ciencia, IA, automatización, web y educación. ¡Es uno de los lenguajes más usados!</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
